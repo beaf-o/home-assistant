@@ -1,0 +1,20 @@
+broker: 127.0.0.1
+port: 1883
+client_id: home-assistant
+keepalive: 60
+username: !secret mqtt_user
+password: !secret mqtt_password
+discovery: true
+discovery_prefix: homeassistant
+
+birth_message:
+  topic: 'home-assistant/status'
+  payload: 'online'
+  qos: 1
+  retain: true
+
+will_message:
+  topic: 'home-assistant/status'
+  payload: 'offline'
+  qos: 1
+  retain: true

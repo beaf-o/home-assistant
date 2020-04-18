@@ -1,0 +1,15 @@
+channel_dispatch:
+  alias: "Channel Dispatch"
+  sequence:
+    - service: media_player.media_play
+      data_template:
+        entity_id: media_player.living_room_tv
+        media_content_type: channel
+        media_content_id: >-
+          {% if channel|lower in ("disney", "disney channel") %}
+            'Disney'
+          {% elif channel|lower in ("rbb", "er bebe") %}
+            'RBB'
+          {% else %}
+            {{channel}}
+          {% endif %}}

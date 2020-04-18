@@ -1,0 +1,37 @@
+- alias: 'Staubi'
+  trigger:
+    - platform: state
+      entity_id: input_select.vacuum_room
+      from: 'Raum wählen'
+  action:
+    - service: notify.livingroom_tv
+      data:
+        message: "{{ states('input_select.vacuum_room') }}"
+    - service: script.vacuum_dispatch
+      data_template:
+        room: "{{ states('input_select.vacuum_room') }}"
+    - service: input_select.select_option
+      entity_id: input_select.vacuum_room
+      data_template:
+        option: "Raum wählen"
+
+- alias: IFTTT Start Cleaning Room
+  trigger:
+    - platform: event
+      event_type: ifttt_webhook_received
+      event_data:
+        action: call_service
+  condition:
+    condition: template
+    value_template: "{{ trigger.event.data.service == 'script.vacuum_dispatch' }}"
+  action:
+    - service: notify.livingroom_tv
+      data_template:
+        message: 'Staubi => {{ trigger.event.data.room }}'
+    - service: script.vacuum_dispatch
+      data_template:
+        room: '{{ trigger.event.data.room }}'
+    - service: input_select.select_option
+      entity_id: input_select.vacuum_room
+      data_template:
+        option: "Raum wählen"

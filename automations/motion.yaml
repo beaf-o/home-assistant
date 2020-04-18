@@ -1,0 +1,31 @@
+- alias: 'Dafang motion notification'
+  initial_state: 'true'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.door_window_sensor_158d0002b82207
+      to: 'on'
+  action:
+    - service: script.dafang_telegram_notification
+
+- alias: 'Xiaofang basement motion notification'
+  initial_state: 'true'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.xiaofang22_motion_sensor
+      to: 'on'
+  action:
+    - service: notify.telegram_stefan
+      data:
+        message: 'Motion detected on camera: xiaofang22'
+    - service: script.xiaofang22_telegram_notification
+    
+- alias: 'timelaps'
+  initial_state: 'false'
+  trigger:
+    - platform: time_pattern
+      minutes: '/1'
+  action:
+    - service: camera.snapshot
+      data:
+        entity_id: camera.xiaofang4d
+        filename: '/config/snapshots/xiaofang_{{ now().strftime("%Y%m%d-%H%M%S") }}.jpg'

@@ -1,0 +1,61 @@
+xiaofang22_telegram_notification:
+  alias: "Xiaofang22 Telegram notification"
+  sequence:
+    - service: camera.snapshot
+      data:
+        entity_id: camera.xiaofang22
+        filename: /config/snapshots/xiaofang22_01.jpg
+    - service: camera.snapshot
+      data:
+        entity_id: camera.xiaofang22
+        filename: /config/snapshots/xiaofang22_02.jpg
+    - service: camera.snapshot
+      data:
+        entity_id: camera.xiaofang22
+        filename: /config/snapshots/xiaofang22_03.jpg
+    - service: camera.snapshot
+      data:
+        entity_id: camera.xiaofang22
+        filename: /config/snapshots/xiaofang22_04.jpg
+    - service: camera.snapshot
+      data:
+        entity_id: camera.xiaofang22
+        filename: /config/snapshots/xiaofang22_05.jpg
+    - service: camera.snapshot
+      data:
+        entity_id: camera.xiaofang22
+        filename: /config/snapshots/xiaofang22_06.jpg
+    - service: camera.snapshot
+      data:
+        entity_id: camera.xiaofang22
+        filename: /config/snapshots/xiaofang22_07.jpg
+    - service: camera.snapshot
+      data:
+        entity_id: camera.xiaofang22
+        filename: /config/snapshots/xiaofang22_08.jpg
+    - service: camera.snapshot
+      data:
+        entity_id: camera.xiaofang22
+        filename: /config/snapshots/xiaofang22_09.jpg
+    - service: camera.snapshot
+      data:
+        entity_id: camera.xiaofang22
+        filename: /config/snapshots/xiaofang22_10.jpg
+    - delay: '00:00:01'
+    - service: notify.telegram_stefan
+      data:
+        title: '*ACHTUNG*'
+        message: 'Motion detected on camera: xiaofang22'
+        data:
+          photo:
+            - file: /config/snapshots/xiaofang22_01.jpg
+            - file: /config/snapshots/xiaofang22_02.jpg
+            - file: /config/snapshots/xiaofang22_03.jpg
+            - file: /config/snapshots/xiaofang22_04.jpg
+            - file: /config/snapshots/xiaofang22_05.jpg
+            - file: /config/snapshots/xiaofang22_06.jpg
+            - file: /config/snapshots/xiaofang22_07.jpg
+            - file: /config/snapshots/xiaofang22_08.jpg
+            - file: /config/snapshots/xiaofang22_09.jpg
+            - file: /config/snapshots/xiaofang22_10.jpg
+    - delay: '00:00:10'

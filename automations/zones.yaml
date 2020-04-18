@@ -1,0 +1,94 @@
+- alias: "Tina at work"
+  initial_state: 'on'
+  trigger:
+    platform: zone
+    entity_id: person.tina
+    zone: zone.MOE
+    event: enter  # or "leave"
+  action:
+    - service: notify.telegram_stefan
+      data:
+        message: 'Tina ist auf Arbeit angekommen'
+
+- alias: "Stefan at work"
+  initial_state: 'off'
+  trigger:
+    platform: zone
+    entity_id: person.stefan
+    zone: zone.RG
+    event: enter  # or "leave"
+  action:
+    - service: notify.telegram_stefan
+      data:
+        message: 'Stefan ist auf Arbeit angekommen'
+
+- alias: "Stefan comes home"
+  trigger:
+    platform: zone
+    entity_id: person.stefan
+    zone: zone.Home
+    event: enter  # or "leave"
+  condition:
+    - condition: time
+      after: '15:00:00'
+      before: '18:00:00'
+  action:
+    - service: notify.telegram_stefan
+      data:
+        message: 'Stefan ist Zuhause angekommen'
+    - service: xiaomi_aqara.play_ringtone
+      data: {"gw_mac":"78:11:DC:F7:8F:D3", "ringtone_id":"12", "ringtone_vol":"10"}
+      
+- alias: "Tina comes home"
+  trigger:
+    platform: zone
+    entity_id: person.tina
+    zone: zone.Home
+    event: enter  # or "leave"
+  condition:
+    - condition: time
+      after: '15:00:00'
+      before: '18:00:00'
+  action:
+    - service: notify.telegram_stefan
+      data:
+        message: 'Tina ist Zuhause angekommen'
+    - service: xiaomi_aqara.play_ringtone
+      data: {"gw_mac":"78:11:DC:F7:8F:D3", "ringtone_id":"20", "ringtone_vol":"10"}
+
+- alias: "Anny at school"
+  initial_state: 'on'
+  trigger:
+    platform: zone
+    entity_id: person.anny
+    zone: zone.school
+    event: enter  # or "leave"
+  action:
+    - service: notify.telegram_stefan
+      data:
+        message: 'Anny ist in der Schule angekommen'
+
+- alias: "Anny left school"
+  initial_state: 'on'
+  trigger:
+    platform: zone
+    entity_id: person.anny
+    zone: zone.school
+    event: leave
+  action:
+    - service: notify.telegram_stefan
+      data:
+        message: 'Anny hat die Schule verlassen'
+    
+- alias: "Sabine left school"
+  hide_entity: True
+  initial_state: 'on'
+  trigger:
+    platform: zone
+    entity_id: person.sabine
+    zone: zone.school
+    event: leave
+  action:
+    - service: notify.telegram_stefan
+      data:
+        message: 'Sabine hat die Schule verlassen'

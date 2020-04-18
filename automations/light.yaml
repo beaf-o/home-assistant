@@ -1,0 +1,139 @@
+- alias: "Turn on night light"
+  trigger:
+    platform: time
+    at: '18:45:00'
+  action:
+    - service: light.turn_on
+      entity_id: light.gateway_light_7811dcf78fd3
+      data:
+        brightness: 3
+        rgb_color: [255, 0, 0]
+
+- alias: "Turn off night light"
+  trigger:
+    platform: time
+    at: '06:45:00'
+  action:
+    - service: light.turn_off
+      entity_id: light.gateway_light_7811dcf78fd3
+      
+- alias: "kitchen light on"
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001d90b6c
+      from: 'off'
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001a8d3ed
+      from: 'off'
+      to: 'on'
+  condition:
+    condition: and
+    conditions:
+      - condition: numeric_state
+        entity_id: sensor.brightness_kitchen
+        below: '500'
+      - condition: or
+        conditions:
+        - condition: time
+          after: '07:00:00'
+        - condition: time
+          before: '23:00:00'
+  action:
+    - service: homeassistant.turn_off
+      entity_id: script.turn_off_kitchen_lights
+    - service: script.turn_on_kitchen_lights_full
+    
+- alias: "kitchen night light on"
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001d90b6c
+      from: 'off'
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001a8d3ed
+      from: 'off'
+      to: 'on'
+  condition:
+    condition: and
+    conditions:
+      - condition: numeric_state
+        entity_id: sensor.brightness_kitchen
+        below: '500'
+      - condition: time
+        before: '07:00:01'
+  action:
+    - service: light.turn_on
+      entity_id: light.kitchen_blue_left
+      data:
+        brightness: 100
+    - service: light.turn_on
+      entity_id: light.kitchen_blue_right
+      data:
+        brightness: 100
+    
+- alias: Permanent kitchen light
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d00021368e7
+      click_type: double
+  action:
+    - service: homeassistant.turn_off
+      entity_id: script.turn_off_kitchen_lights
+    - service: script.turn_on_kitchen_lights_full
+    - service: automation.turn_off
+      entity_id: automation.kitchen_light_on
+    - service: automation.turn_off
+      entity_id: automation.kitchen_light_off
+
+- alias: "kitchen light off"
+  trigger:
+    platform: time_pattern
+    minutes: '/2'
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: binary_sensor.motion_sensor_158d0001d90b6c
+        state: 'off'
+      - condition: state
+        entity_id: binary_sensor.motion_sensor_158d0001a8d3ed
+        state: 'off'
+  action:
+     - service: script.turn_on
+       entity_id: script.turn_off_kitchen_lights
+       
+- alias: "kitchen light off from permanent"
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d00021368e7
+      click_type: single
+  action:
+    - service: script.turn_off_kitchen_lights
+    - service: automation.turn_on
+      entity_id: automation.kitchen_light_on
+    - service: automation.turn_on
+      entity_id: automation.kitchen_light_off
+      
+- alias: "Vitrinen an"
+  trigger:
+    platform: time
+    at: '18:45:00'
+  action:
+    - service: light.turn_on
+      entity_id: light.vitrinen
+      data:
+        brightness: 5
+        transition: 10
+        
+- alias: "Vitrinen aus"
+  trigger:
+    platform: time
+    at: '23:00:00'
+  action:
+    - service: light.turn_off
+      entity_id: light.vitrinen

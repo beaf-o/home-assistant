@@ -1,0 +1,105 @@
+light.gateway_light_7811dcf78fd3:
+  friendly_name: Gateway
+light.kitchen_white_left:
+  friendly_name: Oberschränke links
+light.kitchen_blue_left:
+  friendly_name: Unterschränke links
+light.kitchen_white_right:
+  friendly_name: Oberschränke rechts
+light.kitchen_blue_right:
+  friendly_name: Unterschränke rechts
+
+sensor.illumination_7811dcf78fd3:
+  friendly_name: Helligkeit (Gateway)
+
+sensor.brightness_child_room:
+  friendly_name: Helligkeit
+sensor.brightness_living_room:
+  friendly_name: Helligkeit
+sensor.brightness_sleeping_room:
+  friendly_name: Helligkeit
+sensor.brightness_kitchen:
+  friendly_name: Helligkeit
+sensor.brightness_bath_room:
+  friendly_name: Helligkeit
+
+sensor.humidity_child_room:
+  friendly_name: Feuchtigkeit
+sensor.humidity_living_room:
+  friendly_name: Feuchtigkeit
+sensor.humidity_sleeping_room:
+  friendly_name: Feuchtigkeit
+sensor.humidity_kitchen:
+  friendly_name: Feuchtigkeit
+sensor.humidity_bath_room:
+  friendly_name: Feuchtigkeit
+  
+sensor.temperature_child_room:
+  friendly_name: Temperatur
+sensor.temperature_living_room:
+  friendly_name: Temperatur
+sensor.temperature_sleeping_room:
+  friendly_name: Temperatur
+sensor.temperature_kitchen:
+  friendly_name: Temperatur
+sensor.temperature_bath_room:
+  friendly_name: Temperatur
+
+sensor.pressure_child_room:
+  friendly_name: Luftdruck
+sensor.pressure_living_room:
+  friendly_name: Luftdruck
+sensor.pressure_sleeping_room:
+  friendly_name: Luftdruck
+sensor.pressure_kitchen:
+  friendly_name: Luftdruck
+sensor.pressure_bath_room:
+  friendly_name: Luftdruck
+  
+sensor.motion_child_room:
+  friendly_name: Bewegung
+sensor.motion_living_room:
+  friendly_name: Bewegung
+sensor.motion_sleeping_room:
+  friendly_name: Bewegung
+sensor.motion_kitchen_right:
+  friendly_name: Bewegung
+sensor.motion_kitchen_left:
+  friendly_name: Bewegung
+sensor.motion_bath_room:
+  friendly_name: Bewegung
+
+sensor.health_child_room:
+  friendly_name: Kinderzimmer
+sensor.health_living_room:
+  friendly_name: Wohnzimmer
+sensor.health_sleeping_room:
+  friendly_name: Schlafzimmer
+sensor.health_kitchen_right:
+  friendly_name: Küche rechts
+sensor.health_kitchen_left:
+  friendly_name: Küche links
+sensor.health_bath_room:
+  friendly_name: Bad
+  
+sensor.ip_child_room:
+  friendly_name: Kinderzimmer
+sensor.ip_living_room:
+  friendly_name: Wohnzimmer
+sensor.ip_sleeping_room:
+  friendly_name: Schlafzimmer
+sensor.ip_kitchen_right:
+  friendly_name: Küche rechts
+sensor.ip_kitchen_left:
+  friendly_name: Küche links
+sensor.ip_bath_room:
+  friendly_name: Bad
+
+person.stefan:
+  entity_picture: "https://lh5.googleusercontent.com/-J2ecuostNF4/AAAAAAAAAAI/AAAAAAAARis/MRWqjIFtgpE/photo.jpg"
+person.tina:
+  entity_picture: "https://lh5.googleusercontent.com/-HRwVb08nzOQ/AAAAAAAAAAI/AAAAAAABeAM/vkMCkn851rI/photo.jpg"
+person.sabine:
+  entity_picture: "https://lh4.googleusercontent.com/-LVLB5UvTFZs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rdnocPeCFpZ4xeJX4LLU4Lb34Q3-g/photo.jpg"
+#person.anny:
+#  entity_picture: "https://lh5.googleusercontent.com/-J2ecuostNF4/AAAAAAAAAAI/AAAAAAAARis/MRWqjIFtgpE/photo.jpg""

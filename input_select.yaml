@@ -1,0 +1,27 @@
+vacuum_room:
+  name: Wählen Sie einen Raum aus, den Staubi saugen soll
+  options:
+    - Raum wählen
+    - Wohnzimmer
+    - Kinderzimmer
+    - Küche
+    - Flur
+    - Schlafzimmer
+    - Bad
+    - Dock
+  initial: Raum wählen
+
+channel:
+  name: Wählen Sie einen Kanal
+  options:
+    - Kanal wählen
+    - Das Erste
+    - ZDF
+    - RTL
+    - SAT1
+    - RTL2
+    - PRO7
+    - RBB
+    - KiKa
+    - Disney
+  initial: Kanal wählen

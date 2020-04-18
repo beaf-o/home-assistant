@@ -1,0 +1,5 @@
+- platform: manual_mqtt
+  name: Alarmanlage
+  code: !secret alarm_code
+  state_topic: "home-assistant/alarm"
+  command_topic: "home-assistant/alarm/set"

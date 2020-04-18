@@ -1,0 +1,9 @@
+- platform: ddwrt
+  host: 192.168.177.2
+  username: !secret dd-wrt-user
+  password: !secret dd-wrt-password
+
+- platform: fritz
+
+- platform: google_maps
+  username: !secret maps-user

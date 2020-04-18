@@ -1,0 +1,31 @@
+- platform: generic
+  name: Dafang
+  still_image_url: https://root:ismart12@192.168.177.48/cgi-bin/currentpic.cgi
+  verify_ssl: false
+
+- platform: generic
+  name: Dafang rtsp
+  still_image_url: https://192.168.177.48/cgi-bin/currentpic.cgi
+  stream_source: rtsp://192.168.177.48:8554/unicast
+  verify_ssl: false
+  username: root
+  password:  ismart12
+  authentication: basic
+
+- platform: generic
+  name: Xiaofang22
+  still_image_url: https://root:ismart12@192.168.177.81/cgi-bin/currentpic.cgi
+#  stream_source: rtsp://192.168.177.81:8554/unicast
+  verify_ssl: false
+
+- platform: generic
+  name: motioneye
+  still_image_url: http://192.168.177.63/picture/1/current/
+
+- platform: generic
+  name: motioneye2
+  still_image_url: http://192.168.177.64/picture/1/current/
+
+- platform: generic
+  name: esp-who
+  still_image_url: http://192.168.177.76/capture

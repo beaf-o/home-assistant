@@ -1,0 +1,37 @@
+turn_off_kitchen_lights:
+  sequence:
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kr/led/white/command"
+         payload_template: '{"state":"OFF","brightness":0}'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kl/led/white/command"
+         payload_template: '{"state":"OFF","brightness":0}'
+    - delay: '00:00:10'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kr/led/blue/command"
+         payload_template: '{"state":"OFF","brightness":0}'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kl/led/blue/command"
+         payload_template: '{"state":"OFF","brightness":0}'
+    - delay: '00:00:05'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kr/led/white/command"
+         payload_template: '{"state":"OFF","brightness":0}'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kl/led/white/command"
+         payload_template: '{"state":"OFF","brightness":0}'
+    - delay: '00:00:10'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kr/led/blue/command"
+         payload_template: '{"state":"OFF","brightness":0}'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kl/led/blue/command"
+         payload_template: '{"state":"OFF","brightness":0}'

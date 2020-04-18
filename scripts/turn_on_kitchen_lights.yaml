@@ -1,0 +1,28 @@
+turn_on_kitchen_lights:
+  sequence:
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kr/led/all/command"
+         payload_template: '{"state":"ON","brightness":200}'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kl/led/all/command"
+         payload_template: '{"state":"ON","brightness":200}'
+    - delay: '00:00:02'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kr/led/all/command"
+         payload_template: '{"state":"ON","brightness":200}'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kl/led/all/command"
+         payload_template: '{"state":"ON","brightness":200}'
+    - delay: '00:00:03'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kr/led/all/command"
+         payload_template: '{"state":"ON","brightness":200}'
+    - service: mqtt.publish
+      data_template:
+         topic: "home-assistant/sensors/ms-kha-kl/led/all/command"
+         payload_template: '{"state":"ON","brightness":200}'

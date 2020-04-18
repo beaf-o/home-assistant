@@ -1,0 +1,608 @@
+
+google_maps_108742915034905024607:
+  hide_if_away: false
+  icon:
+  mac:
+  name: google maps 108742915034905024607
+  picture: https://lh5.googleusercontent.com/-J2ecuostNF4/AAAAAAAAAAI/AAAAAAAARis/MRWqjIFtgpE/photo.jpg
+  track: true
+
+google_maps_118332099201205928192:
+  hide_if_away: false
+  icon:
+  mac:
+  name: google maps 118332099201205928192
+  picture: https://lh5.googleusercontent.com/-HRwVb08nzOQ/AAAAAAAAAAI/AAAAAAABeAM/vkMCkn851rI/photo.jpg
+  track: true
+
+google_maps_115910362180729131626:
+  hide_if_away: false
+  icon:
+  mac:
+  name: google maps 115910362180729131626
+  picture: https://lh4.googleusercontent.com/-LVLB5UvTFZs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rdnocPeCFpZ4xeJX4LLU4Lb34Q3-g/photo.jpg
+  track: true
+
+dafang:
+  hide_if_away: false
+  icon:
+  mac: 34:CE:00:B0:17:13
+  name: DAFANG
+  picture:
+  track: true
+
+esp_112253:
+  hide_if_away: false
+  icon:
+  mac: B4:E6:2D:11:22:53
+  name: ESP-112253
+  picture:
+  track: true
+
+esp_118508:
+  hide_if_away: false
+  icon:
+  mac: B4:E6:2D:11:85:08
+  name: ESP-118508
+  picture:
+  track: true
+
+esp_176eed:
+  hide_if_away: false
+  icon:
+  mac: 2C:3A:E8:17:6E:ED
+  name: ESP-176EED
+  picture:
+  track: true
+
+esp_d99bac:
+  hide_if_away: false
+  icon:
+  mac: 5C:CF:7F:D9:9B:AC
+  name: ESP-D99BAC
+  picture:
+  track: true
+
+echodotbad:
+  hide_if_away: false
+  icon:
+  mac: 88:71:E5:4F:96:FD
+  name: EchoDotBad
+  picture:
+  track: true
+
+echodotkinderzimmer:
+  hide_if_away: false
+  icon:
+  mac: 68:37:E9:B2:19:7A
+  name: EchoDotKinderzimmer
+  picture:
+  track: true
+
+echodotkueche:
+  hide_if_away: false
+  icon:
+  mac: 40:B4:CD:B9:D4:AE
+  name: EchoDotKueche
+  picture:
+  track: true
+
+firehd10:
+  hide_if_away: false
+  icon:
+  mac: 4C:EF:C0:BC:04:96
+  name: FireHD10
+  picture:
+  track: true
+
+firehd8:
+  hide_if_away: false
+  icon:
+  mac: AC:63:BE:0C:C7:BC
+  name: FireHD8
+  picture:
+  track: true
+
+hs100:
+  hide_if_away: false
+  icon:
+  mac: 70:4F:57:0C:81:BE
+  name: HS100
+  picture:
+  track: true
+
+homemate_device:
+  hide_if_away: false
+  icon:
+  mac: 5C:CF:7F:58:55:BE
+  name: HomeMate-device
+  picture:
+  track: true
+
+lg_webos_tv_uj6309:
+  hide_if_away: false
+  icon:
+  mac: 38:8C:50:93:F2:33
+  name: LG--webOS-TV-UJ6309
+  picture:
+  track: true
+
+macbookair:
+  hide_if_away: false
+  icon:
+  mac: 8C:29:37:EF:3F:0C
+  name: MacBookAir
+  picture:
+  track: true
+
+mate_10_lite:
+  hide_if_away: false
+  icon:
+  mac: 38:37:8B:02:18:C4
+  name: Mate-10-lite
+  picture:
+  track: true
+
+oneplusx:
+  hide_if_away: false
+  icon:
+  mac: C0:EE:FB:9A:53:7A
+  name: OneplusX
+  picture:
+  track: true
+
+pc_e8_94_f6_36_5a_a5:
+  hide_if_away: false
+  icon:
+  mac: E8:94:F6:36:5A:A5
+  name: PC-E8-94-F6-36-5A-A5
+  picture:
+  track: true
+
+pocophone:
+  hide_if_away: false
+  icon:
+  mac: A4:50:46:22:F6:71
+  name: Pocophone
+  picture:
+  track: true
+
+roborock:
+  hide_if_away: false
+  icon:
+  mac: 7C:49:EB:9A:F8:3D
+  name: Roborock
+  picture:
+  track: true
+
+switch:
+  hide_if_away: false
+  icon:
+  mac: DC:68:EB:B5:4E:3F
+  name: Switch
+  picture:
+  track: true
+
+xiaomigateway:
+  hide_if_away: false
+  icon:
+  mac: 78:11:DC:F7:8F:D3
+  name: XiaomiGateway
+  picture:
+  track: true
+
+amazon_36d4aa33e:
+  hide_if_away: false
+  icon:
+  mac: B4:7C:9C:44:BA:DB
+  name: amazon-36d4aa33e
+  picture:
+  track: true
+
+amazon_4c7e0cec5:
+  hide_if_away: false
+  icon:
+  mac: CC:F7:35:71:9F:AC
+  name: amazon-4c7e0cec5
+  picture:
+  track: true
+
+amazon_ff3984fef:
+  hide_if_away: false
+  icon:
+  mac: 74:C2:46:F8:A2:67
+  name: amazon-ff3984fef
+  picture:
+  track: true
+
+beaf_o:
+  hide_if_away: false
+  icon:
+  mac: F4:5C:89:8B:9D:CB
+  name: beaf-o
+  picture:
+  track: true
+
+ds214play:
+  hide_if_away: false
+  icon:
+  mac: 00:11:32:3B:DA:89
+  name: ds214play
+  picture:
+  track: true
+
+fritz_box:
+  hide_if_away: false
+  icon:
+  mac: CC:CE:1E:A9:23:F4
+  name: fritz.box
+  picture:
+  track: true
+
+fritz_repeater:
+  hide_if_away: false
+  icon:
+  mac: D2:CE:1E:0A:4E:58
+  name: fritz.repeater
+  picture:
+  track: true
+
+hassbian:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:3D:93:73
+  name: hassbian
+  picture:
+  track: true
+
+hassio:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:C0:FA:FC
+  name: hassio
+  picture:
+  track: true
+
+iphone:
+  hide_if_away: false
+  icon:
+  mac: D0:25:98:3F:48:73
+  name: iPhone
+  picture:
+  track: true
+
+nexus5:
+  hide_if_away: false
+  icon:
+  mac: BC:F5:AC:FC:19:0E
+  name: Nexus5
+  picture:
+  track: true
+
+google_maps_117169145911327253105:
+  hide_if_away: false
+  icon:
+  mac:
+  name: google maps 117169145911327253105
+  picture: https://lh4.googleusercontent.com/-5ICyutxWhXo/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rf826GHm01mWfQUfxnA9qx29GQqqg/photo.jpg
+  track: true
+
+dd_wrt:
+  hide_if_away: false
+  icon:
+  mac: 00:1C:10:09:36:AC
+  name: dd-wrt
+  picture:
+  track: true
+
+xiaofang22:
+  hide_if_away: false
+  icon:
+  mac: 78:11:DC:76:ED:22
+  name: xiaofang22
+  picture:
+  track: true
+
+bamboo:
+  hide_if_away: false
+  icon:
+  mac: 60:01:94:38:09:A3
+  name: bamboo
+  picture:
+  track: true
+
+honor_6x:
+  hide_if_away: false
+  icon:
+  mac: 3C:FA:43:F2:58:1A
+  name: Honor-6X
+  picture:
+  track: true
+
+amazon_391a9f27a:
+  hide_if_away: false
+  icon:
+  mac: CC:F7:35:07:9E:DD
+  name: amazon-391a9f27a
+  picture:
+  track: true
+
+ts_xl794:
+  hide_if_away: false
+  icon:
+  mac: 00:1D:73:DF:77:94
+  name: TS-XL794
+  picture:
+  track: true
+
+meye_60015022:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:01:50:22
+  name: meye-60015022
+  picture:
+  track: true
+
+macbookair_2:
+  hide_if_away: false
+  icon:
+  mac: A8:60:B6:25:3E:5C
+  name: MacBookAir
+  picture:
+  track: true
+
+dobrowolny_nb:
+  hide_if_away: false
+  icon:
+  mac: D4:3B:04:3D:D3:85
+  name: Dobrowolny-NB
+  picture:
+  track: true
+
+dobrowolny_nb_2:
+  hide_if_away: false
+  icon:
+  mac: 48:2A:E3:31:A0:F4
+  name: Dobrowolny-NB
+  picture:
+  track: true
+
+drucker:
+  hide_if_away: false
+  icon:
+  mac: 00:15:99:87:0C:FE
+  name: Drucker
+  picture:
+  track: true
+
+fire7:
+  hide_if_away: false
+  icon:
+  mac: 44:65:0D:CE:64:F0
+  name: Fire7
+  picture:
+  track: true
+
+esp_977bcf:
+  hide_if_away: false
+  icon:
+  mac: 68:C6:3A:97:7B:CF
+  name: ESP-977BCF
+  picture:
+  track: true
+
+gw_4491602bb42f:
+  hide_if_away: false
+  icon:
+  mac: 44:91:60:2B:B4:2F
+  name: GW-4491602BB42F
+  picture:
+  track: true
+
+ipad:
+  hide_if_away: false
+  icon:
+  mac: 34:51:C9:D5:66:F2
+  name: iPad
+  picture:
+  track: true
+
+obi4:
+  hide_if_away: false
+  icon:
+  mac: 2C:3A:E8:2F:4E:AB
+  name: obi4
+  picture:
+  track: true
+
+esp_3d10a0:
+  hide_if_away: false
+  icon:
+  mac: 5C:CF:7F:3D:10:A0
+  name: ESP-3D10A0
+  picture:
+  track: true
+
+raspbmccd13:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:AE:CD:13
+  name: raspbmccd13
+  picture:
+  track: true
+
+obi5:
+  hide_if_away: false
+  icon:
+  mac: 5C:CF:7F:57:BD:1A
+  name: obi5
+  picture:
+  track: true
+
+esp_0271b4:
+  hide_if_away: false
+  icon:
+  mac: DC:4F:22:02:71:B4
+  name: ESP-0271B4
+  picture:
+  track: true
+
+obi2:
+  hide_if_away: false
+  icon:
+  mac: 5C:CF:7F:4B:33:32
+  name: obi2
+  picture:
+  track: true
+
+amazon_493c74e41:
+  hide_if_away: false
+  icon:
+  mac: 50:DC:E7:C0:EE:98
+  name: amazon-493c74e41
+  picture:
+  track: true
+
+google_nest_hub:
+  hide_if_away: false
+  icon:
+  mac: 1C:F2:9A:28:CC:4C
+  name: Google-Nest-Hub
+  picture:
+  track: true
+
+christmastree:
+  hide_if_away: false
+  icon:
+  mac: BC:DD:C2:08:C6:C2
+  name: christmastree
+  picture:
+  track: true
+
+amazon_5aeffe6bc:
+  hide_if_away: false
+  icon:
+  mac: CC:F7:35:08:15:F0
+  name: amazon-5aeffe6bc
+  picture:
+  track: true
+
+pc_34_e8_94_0f_86_7f:
+  hide_if_away: false
+  icon:
+  mac: 34:E8:94:0F:86:7F
+  name: PC-34-E8-94-0F-86-7F
+  picture:
+  track: true
+
+redminote8pro:
+  hide_if_away: false
+  icon:
+  mac: D8:CE:3A:F3:AA:C6
+  name: RedmiNote8Pro
+  picture:
+  track: true
+
+xiaomi_note10:
+  hide_if_away: false
+  icon:
+  mac: 7C:D6:61:F9:70:45
+  name: Xiaomi-Note10
+  picture:
+  track: true
+
+amazon_bb7519e3d:
+  hide_if_away: false
+  icon:
+  mac: 74:D6:37:D9:F7:B7
+  name: amazon-bb7519e3d
+  picture:
+  track: true
+
+48_d6_d5_cf_20_aa:
+  hide_if_away: false
+  icon:
+  mac: 48:D6:D5:CF:20:AA
+  name: 48 d6 d5 cf 20 aa
+  picture:
+  track: true
+
+pc_c0_4a_00_30_65_c4:
+  hide_if_away: false
+  icon:
+  mac: C0:4A:00:30:65:C4
+  name: PC-C0-4A-00-30-65-C4
+  picture:
+  track: true
+
+amazon_117a72eb8:
+  hide_if_away: false
+  icon:
+  mac: 78:E1:03:7E:7B:22
+  name: amazon-117a72eb8
+  picture:
+  track: true
+
+amazon_d0a318360:
+  hide_if_away: false
+  icon:
+  mac: CC:9E:A2:64:E6:FB
+  name: amazon-d0a318360
+  picture:
+  track: true
+
+pc_10_fe_ed_f1_0d_e1:
+  hide_if_away: false
+  icon:
+  mac: 10:FE:ED:F1:0D:E1
+  name: PC-10-FE-ED-F1-0D-E1
+  picture:
+  track: true
+
+pc_34_e8_94_0f_86_24:
+  hide_if_away: false
+  icon:
+  mac: 34:E8:94:0F:86:24
+  name: PC-34-E8-94-0F-86-24
+  picture:
+  track: true
+
+nb0189:
+  hide_if_away: false
+  icon:
+  mac: 38:F9:D3:75:76:36
+  name: nb0189
+  picture:
+  track: true
+
+raspberrypi:
+  hide_if_away: false
+  icon:
+  mac: DC:A6:32:26:E2:C0
+  name: raspberrypi
+  picture:
+  track: true
+
+macbookpro:
+  hide_if_away: false
+  icon:
+  mac: 68:A8:6D:2C:8C:9E
+  name: MacBookPro
+  picture:
+  track: true
+
+martinas_air:
+  hide_if_away: false
+  icon:
+  mac: F8:FF:C2:33:4B:AC
+  name: Martinas-Air
+  picture:
+  track: true
+
+iphone_2:
+  hide_if_away: false
+  icon:
+  mac: B0:35:B5:5C:CC:1D
+  name: iPhone
+  picture:
+  track: true

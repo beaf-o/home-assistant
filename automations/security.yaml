@@ -1,0 +1,50 @@
+- alias: "Temperature alert"
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.temperature_158d000321412d
+    above: 28
+    for:
+      minutes: 1
+  action:
+    - service: ifttt.trigger
+      data_template: {"event":"temperature_alert","value1":"{{states.sensor.temperature_child_room.state}}"}
+    - service: light.turn_on
+      entity_id: light.gateway_light_7811dcf78fd3
+      data:
+        brightness: 100
+        rgb_color: [0, 0, 255]
+        
+- alias: 'Alarmbenachrichtigung'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.door_window_sensor_158d0002b82207,binary_sensor.motion_sensor_158d0001a8d3ed,binary_sensor.motion_sensor_158d0001d90b6c
+      to: 'on'
+  condition:
+    condition: or
+    conditions:
+      - condition: state
+        entity_id: alarm_control_panel.alarmanlage
+        state: armed_home
+      - condition: state
+        entity_id: alarm_control_panel.alarmanlage
+        state: armed_away
+  action:
+    - service: alarm_control_panel.alarm_trigger
+      entity_id: alarm_control_panel.alarmanlage
+    - service: light.turn_on
+      entity_id: light.gateway_light_7811dcf78fd3
+      data:
+        brightness: 100
+        rgb_color: [255, 0, 0]
+    - service: ifttt.trigger
+      data_template: {"event":"housebreaking","value1":"Wohnungstür in Potsdam"}
+    - service: ifttt.trigger
+      data: {"event":"housebreaking_image","value2":"https://www.dieversicherer.de/resource/image/3026/16x9/1920/1080/7acc6472bd5d7d637ca1f44128a4c7b1/Zn/artikelbild-tricks-der-einbrecher.jpg"}
+    - service: xiaomi_aqara.play_ringtone
+      data:
+        gw_mac: 7811DCF78FD3
+        ringtone_id: 7
+        ringtone_vol: 35
+    - delay: '00:00:01'
+    - service: light.turn_off
+      entity_id: light.gateway_light_7811dcf78fd3

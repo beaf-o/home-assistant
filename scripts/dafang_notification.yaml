@@ -1,0 +1,78 @@
+dafang_telegram_notification:
+  alias: "Dafang telegram notification"
+  sequence:
+    #- service: camera.record
+    #  data:
+    #    entity_id: camera.dafang
+    #    duration: 10
+    #    filename: /config/snapshots/dafang.mp4
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dafang
+        filename: /config/snapshots/dafang_01.jpg
+    - delay: '00:00:01'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dafang
+        filename: /config/snapshots/dafang_02.jpg
+    - delay: '00:00:01'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dafang
+        filename: /config/snapshots/dafang_03.jpg
+    - delay: '00:00:01'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dafang
+        filename: /config/snapshots/dafang_04.jpg
+    - delay: '00:00:01'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dafang
+        filename: /config/snapshots/dafang_05.jpg
+    - delay: '00:00:01'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dafang
+        filename: /config/snapshots/dafang_06.jpg
+    - delay: '00:00:01'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dafang
+        filename: /config/snapshots/dafang_07.jpg
+    - delay: '00:00:01'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dafang
+        filename: /config/snapshots/dafang_08.jpg
+    - delay: '00:00:01'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dafang
+        filename: /config/snapshots/dafang_09.jpg
+    - delay: '00:00:01'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dafang
+        filename: /config/snapshots/dafang_10.jpg
+    - delay: '00:00:01'
+    - service: notify.telegram_stefan
+      data:
+        message: 'Motion detected on camera: dafang'
+    - service: notify.telegram_stefan
+      data:
+        title: '*ACHTUNG*'
+        message: 'Motion detected on camera: dafang'
+        data:
+          photo:
+            - file: /config/snapshots/dafang_01.jpg
+            - file: /config/snapshots/dafang_02.jpg
+            - file: /config/snapshots/dafang_03.jpg
+            - file: /config/snapshots/dafang_04.jpg
+            - file: /config/snapshots/dafang_05.jpg
+            - file: /config/snapshots/dafang_06.jpg
+            - file: /config/snapshots/dafang_07.jpg
+            - file: /config/snapshots/dafang_08.jpg
+            - file: /config/snapshots/dafang_09.jpg
+            - file: /config/snapshots/dafang_10.jpg
+    - delay: '00:00:10'

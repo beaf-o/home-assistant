@@ -1,0 +1,32 @@
+- alias: 'Debug1'
+  initial_state: 'false'
+  trigger:
+    - platform: mqtt
+      topic: "home-assistant/sensors/ms-kha-kl/led/white/command"
+  #condition: 
+  #  condition: template
+  #  value_template: "{{ trigger.payload_json.state|string == 'OFF' }}"
+  action:
+    - service: notify.telegram_stefan
+      data_template:
+        message: >
+          DEBUG: Triggered kitchen lights.
+          MQTT payload: {{ trigger.payload }}, 
+          MQTT payload state: {{ trigger.payload_json.state }}, 
+          State of motion_sensor_158d0001d90b6c: {{ states('binary_sensor.motion_sensor_158d0001d90b6c') }}, 
+          State of motion_sensor_158d0001a8d3ed: {{ states('binary_sensor.motion_sensor_158d0001a8d3ed') }}, 
+          State of left white led: {{ states('light.kitchen_white_left') }}, 
+          State of left blue led: {{ states('light.kitchen_blue_left') }}, 
+          State of right white led: {{ states('light.kitchen_white_right') }}, 
+          State of right blue led: {{ states('light.kitchen_blue_right') }}
+
+- alias: "Debug2"
+  initial_state: 'false'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001d90b6c
+  action:
+    - service: notify.telegram_stefan
+      data_template:
+        message: >
+          DEBUG: motion_sensor_158d0001d90b6c just changed from {{ trigger.from_state.state }} to {{ trigger.to_state.state }}

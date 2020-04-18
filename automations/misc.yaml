@@ -1,0 +1,54 @@
+- alias: 'Which week'
+  trigger:
+    - platform: event
+      event_type: which_week
+  action:
+    - service: ifttt.trigger
+      data_template: {"event":"which_week_event","value1":"{{states.sensor.which_week.state}}","value2":"{{states.sensor.school_week.state}}"}
+
+- alias: IFTTT Switch channel
+  trigger:
+    - platform: event
+      event_type: ifttt_webhook_received
+      event_data:
+        action: call_service
+  condition:
+    condition: template
+    value_template: "{{ trigger.event.data.service == 'script.channel_dispatch' }}"
+  action:
+    - service: notify.livingroom_tv
+      data_template:
+        message: 'Schalte zu {{ trigger.event.data.channel }}'
+    #- service: script.channel_dispatch
+    #  data_template:
+    #    room: '{{ trigger.event.data.channel }}'
+
+- alias: Sandmann
+  trigger:
+    - platform: time
+      at: '17:48:00'
+  action:
+    service: notify.livingroom_tv
+    data:
+      message: "Bitte umschalten zum Sandmännchen!"
+      
+- alias: Database Purge
+  trigger:
+    platform: time
+    at: '02:00:00'
+  condition:
+    - condition: time
+      weekday:
+        - mon
+  action:
+    - service: recorder.purge
+      data:
+        keep_days: 90
+        repack: true
+
+- alias: Set camera framesize
+  trigger:
+    - platform: time_pattern
+      minutes: 5
+  action:
+    - service: shell_command.set_framesize

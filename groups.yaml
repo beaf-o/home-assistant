@@ -1,0 +1,208 @@
+default_view:
+  name: Home
+  entities:
+    - person.stefan
+    - person.tina
+    - person.anny
+    - person.sabine
+    - group.home_card
+    - alarm_control_panel.alarmanlage
+
+home_card:
+  name: Info
+  entities:
+    - sensor.time
+    - sensor.which_week
+    - sensor.school_week
+    - sensor.fast_com_download
+    - sun.sun
+
+#xmas:
+#  view: yes
+#  name: Weihnachten
+#  entities:
+#    - group.xmas_livingroom
+#    - group.xmas_sleepingroom
+    
+xmas_livingroom:
+  name: Wohnzimmer
+  entities:
+    - switch.sonoff
+    - switch.sonoff_2
+    - switch.stern
+xmas_sleepingroom:
+  name: Schlafzimmer
+  entities:
+    - switch.obi4
+
+livingroom:
+  name: Wohnzimmer
+  entities:
+    - group.lg_tv
+    - group.sensors_living_room
+    - light.vitrinen
+
+lg_tv:
+  name: LG TV
+  entities:
+    - media_player.living_room_tv
+    - input_select.channel
+
+staubi:
+  name: Staubi
+  entities:
+    - vacuum.xiaomi_vacuum_cleaner
+    - input_select.vacuum_room
+    
+sensors_living_room:
+  name: Sensoren
+  entities:
+    - sensor.temperature_158d00036d3832
+    - sensor.humidity_158d00036d3832
+    - sensor.pressure_158d00036d3832
+    #- binary_sensor.motion_sensor_158d0001a8d3ed
+
+childroom:
+  name: Kinderzimmer
+  entities:
+    - group.sensor_card_child_room
+    - light.gateway_light_7811dcf78fd3
+
+sensor_card_child_room:
+  name: Sensoren
+  entities:
+    - sensor.temperature_158d000321412d
+    - sensor.humidity_158d000321412d
+    - sensor.pressure_158d000321412d
+    - sensor.illumination_7811dcf78fd3
+
+kitchen:
+  name: Küche
+  entities:
+    - group.sensor_card_kitchen_left
+    - group.sensor_card_kitchen_right
+    - group.kitchen_lights
+    
+kitchen_lights:
+  name: Beleuchtung
+  entities:
+    - light.kitchen_white_left
+    - light.kitchen_white_right
+    - light.kitchen_blue_left
+    - light.kitchen_blue_right
+    
+hallway:
+  name: Flur
+  entities:
+    - group.hallway_sensors
+
+hallway_sensors:
+  name: Sensoren
+  entities:
+    - binary_sensor.dafang_motion_sensor
+    - binary_sensor.door_window_sensor_158d0002b82207
+
+bathroom:
+  name: Bad
+  entities:
+    - group.bathroom_sensors
+    
+bathroom_sensors:
+  name: Sensoren
+  entities:
+    - sensor.temperature_158d0002b5421e
+    - sensor.humidity_158d0002b5421e
+    - sensor.pressure_158d0002b5421e
+
+sleepingroom:
+  name: Schlafzimmer
+  entities:
+    - group.sleepingroom_sensors
+    - group.staubi
+
+sleepingroom_sensors:
+  name: Sensoren
+  entities:
+    - sensor.temperature_158d0002b549e6
+    - sensor.humidity_158d0002b549e6
+    - sensor.pressure_158d0002b549e6
+    
+automations:
+  name: Automationen
+  entities:
+    - automation.alarmbenachrichtigung
+    - automation.database_purge
+    - automation.katzenbrunnen_cron
+    - automation.kitchen_light_on
+    - automation.kitchen_night_light_on
+    - automation.kitchen_light_off
+    - automation.kitchen_light_off_from_permanent
+    - automation.temperature_alert
+    - automation.turn_on_night_light
+    - automation.turn_off_night_light
+    - automation.set_camera_framesize
+
+nodes:
+  name: Nodes
+  entities:
+    - group.ip_card
+    - group.health_card
+    - group.server_card
+    
+ip_card:
+  name: IPs
+  entities:
+    - sensor.ip_kitchen_left
+    - sensor.ip_kitchen_right
+
+health_card:
+  name: Health
+  entities:
+    - sensor.health_kitchen_left
+    - sensor.health_kitchen_right
+    
+server_card:
+  name: Server
+  entities:
+    - binary_sensor.bentleycoupe
+    - binary_sensor.beaf_o
+    - binary_sensor.ds214play
+    - binary_sensor.ts_xl794
+    - binary_sensor.dd_wrt
+    - binary_sensor.tradfri
+
+basement:
+  name: Keller
+  entities:
+    - group.xiaofang22
+    - camera.motioneye2
+
+xiaofang22:
+  name: Xiaofang22
+  entities:
+    - binary_sensor.xiaofang22_motion_sensor
+    - sensor.xiaofang22_light_sensor
+    - switch.xiaofang22_blue_led
+    - switch.xiaofang22_yellow_led
+    - switch.xiaofang22_ir_filter
+    - switch.xiaofang22_ir_led
+    - switch.xiaofang22_night_mode
+    - switch.xiaofang22_night_mode_auto
+    - camera.xiaofang22
+
+sensor_card_kitchen_right:
+  name: Sensor rechts
+  entities:
+    - sensor.temperature_kitchen
+    #- sensor.humidity_kitchen
+    - sensor.brightness_kitchen
+    - sensor.pressure_kitchen
+    - sensor.motion_kitchen_right
+    - binary_sensor.motion_sensor_158d0001d90b6c
+    - binary_sensor.motion_sensor_158d0001a8d3ed
+    
+sensor_card_kitchen_left:
+  name: Sensor links
+  entities:
+    - sensor.motion_kitchen_left
+    

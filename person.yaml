@@ -1,0 +1,25 @@
+- name: Stefan
+  id: stefan1982
+  user_id: eb58dc7e6d4043989ab398f743ffc451
+  device_trackers:
+    #- device_tracker.mate_10_lite
+    - device_tracker.google_maps_108742915034905024607
+
+- name: Tina
+  id: martina1980
+#  user_id: b2c8357fa5864a6f99697edf59561de3
+  device_trackers:
+  #- device_tracker.xiaominote10
+    - device_tracker.google_maps_118332099201205928192
+
+- name: Sabine
+  id: sabine1952
+  device_trackers:
+  #- device_tracker.honor7x
+    - device_tracker.google_maps_115910362180729131626
+
+- name: Anny
+  id: anny2011
+  device_trackers:
+    - device_tracker.google_maps_117169145911327253105
+    - device_tracker.pocophone

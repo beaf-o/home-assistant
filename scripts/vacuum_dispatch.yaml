@@ -1,0 +1,21 @@
+vacuum_dispatch:
+  alias: "Vacuum Dispatch"
+  sequence:
+    - service: script.turn_on
+      data_template:
+        entity_id: >-
+          {% if room|lower in ("wohnzimmer", "ins wohnzimmer") %}
+            script.vacuum_living_room
+          {% elif room|lower in ("schlafzimmer", "ins schlafzimmer") %}
+            script.vacuum_sleeping_room
+          {% elif room|lower in ("bad", "ins bad", "badezimmer", "ins badezimmer") %}
+            script.vacuum_bath_room
+          {% elif room|lower in ("kinderzimmer", "ins kinderzimmer") %}
+            script.vacuum_child_room
+          {% elif room|lower in ("küche", "kueche", "die küche", "in die küche") %}
+            script.vacuum_kitchen
+          {% elif room|lower in ("flur", "den flur", "in den flur", "eingang") %}
+            script.vacuum_hallways
+          {% elif room|lower in ("nach hause", "home", "dock", "base") %}
+            script.vacuum_home
+          {% endif %}

@@ -1,0 +1,24 @@
+- platform: ping
+  host: 192.168.177.2
+  name: 'dd-wrt'
+
+- platform: ping
+  host: 192.168.177.91
+  name: 'tradfri'
+
+- platform: ping
+  host: 192.168.177.41
+  name: 'ds214play'
+
+- platform: ping
+  host: 192.168.177.89
+  name: 'ts-xl794'
+  
+- platform: ping
+  host: bentleycoupe.no-ip.org
+  name: 'bentleycoupe'
+  
+- platform: ping
+  host: beaf-o.no-ip.org
+  name: 'beaf-o'
+  

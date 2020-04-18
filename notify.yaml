@@ -1,0 +1,12 @@
+- platform: webostv
+  host: 192.168.177.34
+  name: livingroom_tv
+  filename: webostv.conf
+
+- platform: telegram
+  name: telegram_urlaubscrew
+  chat_id: -16798718
+
+- platform: telegram
+  name: telegram_stefan
+  chat_id: 70310469
